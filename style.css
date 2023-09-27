@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* nav main */
+.nav-container{
+    width: 100%;
+    height: 86px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 90px;
+    position: fixed;
+    box-shadow: 1px 17px 20px -6px rgba(0,0,0,0.36);
+}
+
+
+/* nav left  */
+.nav-logo-container{
+    width: 150px;
+    height: 82px;
+}
+.nav-logo-container img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* nav right  */
+.nav-button-container{
+    width: 850px;
+    height: 82px;
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 40px;
+}
+
+.nav-button-container li{
+    list-style: none;
+    font-size: 17px;
+    font-family:sans-serif;
+    letter-spacing: 1px;
+}
+
+.nav-button-container a{
+    text-decoration: none;
+    color: black;
+    &:hover{
+        color: red;
+        text-decoration: underline;
+    }
+}
+
+.toggle{
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: ridge;
+    display: none;
+}
+
+
+/* banner  */
+.banner-div{
+    width: 100%;
+    height:73.340vw;
+    
+
+}
+
+.banner-div img{
+    width: 100%;
+    height: 100%;  
+}
+
+
+/* gallery  */
+.product-and-text{
+    height: 1050px;
+    display: grid;
+    grid-template-rows: 68px 830px 68px;
+    grid-template-columns: 1160px;
+    align-content: space-between;   
+    justify-content: center;
+    margin-top: 90px;
+}
+
+
+/* heading  */
+.heading-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.heading-div .heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 372px;
+    height: 65px;
+    background-color: #0052A1;
+    color: white;
+   
+
+}
+
+
+/* products  */
+.products-div{
+    width: 100%;
+    display: grid;
+    column-gap: 20px;
+    row-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(3,350px);
+    grid-template-rows: repeat(2,380px);
+}  
+
+.products-div .box{
+    height: 100%;
+   background-color: #f2e4cf;
+  
+}
+
+.box img{
+    width: 100%;
+    height: 83%;
+}
+
+.box h2{
+    cursor: pointer;
+    height: 16%;
+    width: 100%;
+    background-color: #0052A1;
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    &:hover{
+        background-color: #ED1B24;
+       }  
+}
+
+
+/* button  */
+.button-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.button-div .button{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 163px;
+    height: 46px;
+    background-color: #ED1B24;
+    color: white;
+    border-radius: 5px;
+    &:hover{
+        background-color: #0052A1;
+       }
+}
+
+
+/* white background fill  */
+.white{
+    width: 100%;
+    height: 80px;
+}
+
+
+/* about tag text and iceacream  */
+.about{
+    width: 100%;
+    height: 475px;
+    background: url(./Images/footer\ back.jpg);
+    display: grid;
+    grid-template-columns: 683px 487px;
+    grid-template-rows: 475px;
+    justify-content: center;
+}
+
+.about-left{
+    display: flex;
+    align-items: center;
+}
+
+.about-right img{
+    width: 100%;
+    height: 100%;  
+}
+
+.about-ul li{
+    list-style: none;
+}
+
+.about-button{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 163px;
+    height: 46px;
+    background-color: #ED1B24;
+    color: white;
+    border-radius: 5px;
+    &:hover{
+        background-color: #0052A1;
+       }
+}
+
+.about-ul h3{
+color: #0052A1;
+font-size: 23px;
+}
+
+.about-ul h1{
+    color: #ED1B24;
+    font-size: 30px;
+}
+
+
+.about-ul p{
+    color: #333;
+    font-size: 17px;
+}
+
+
+/* footer section  */
+.footer-container{
+    width: 100%;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-box{
+    width: 300px;
+    height: 100px;
+    line-height: 2;
+}
+
+.footer-ul{
+    list-style: none;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-ul img{
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+}
+
+.footer-box h4{
+    padding-left: 25px;
+    font-weight: lighter;
+    
+}
+
+
+/* side fixed social bar  */
+.side{
+    width: 35px;
+    height: 180px;
+    display: grid;
+    grid-template-rows: repeat(4,45px);
+    position:fixed;
+    bottom: 34%;
+    right: 0;
+    row-gap: 1px;
+}
+
+.side1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.side i{
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+.side1:nth-child(odd){
+background-color: #00AAE5;
+color: white;
+ }
+   
+.side :nth-child(2){
+    background-color: #E94A47;
+    color: white;
+}
+
+.side :nth-child(4){
+color: white;
+background-color: #1177B5;
+}
+
+.uncle{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+
+#extra {
+    display: none;
+}
+/* when togglee click div will work behind nav only below 736px  */
+
+
+
+
+
